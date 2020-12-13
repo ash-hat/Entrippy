@@ -1,6 +1,6 @@
 using System;
 
-namespace Entrippy.Conversion.Impl
+namespace Entrippy.Conversion
 {
 	public class ConstrainedConverterBuilder<T>
 	{

@@ -1,6 +1,6 @@
 using ADepIn;
 
-namespace Entrippy.Fitting.Impl
+namespace Entrippy.Fitting
 {
 	public class OptionFitter<T> : IFitter<Option<T>>
 	{

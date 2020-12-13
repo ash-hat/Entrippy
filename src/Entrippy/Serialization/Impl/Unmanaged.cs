@@ -1,11 +1,7 @@
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
 	public class UnmanagedSerializer<T> : ISerializer<T> where T : unmanaged
 	{
-		public static UnmanagedSerializer<T> Instance { get; } = new UnmanagedSerializer<T>();
-
 		public unsafe T Deserialize(IPackedReader reader)
 		{
 			T value = default;

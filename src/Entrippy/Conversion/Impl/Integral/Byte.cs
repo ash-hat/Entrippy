@@ -1,4 +1,4 @@
-namespace Entrippy.Conversion.Impl
+namespace Entrippy.Conversion
 {
 	public class ByteConverter :
 		IConverter<sbyte, byte>, IConverter<byte, byte>,

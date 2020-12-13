@@ -1,12 +1,10 @@
 using System;
 using ADepIn;
 
-namespace Entrippy.Differentiation.Impl
+namespace Entrippy.Differentiation
 {
 	public class EqualityDifferentiator<T> : IDifferentiator<T, T> where T : IEquatable<T>
 	{
-		public static EqualityDifferentiator<T> Instance { get; } = new EqualityDifferentiator<T>();
-
 		public Option<T> CreateDelta(T now, Option<T> baseline)
 		{
 			if (baseline.MatchSome(out var value))

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Entrippy.Fitting.Impl
+namespace Entrippy.Fitting
 {
 	public class SuperFitter<T> : IFitter<T> where T : new()
 	{
@@ -11,7 +11,7 @@ namespace Entrippy.Fitting.Impl
 			_entries = new List<IEntry>();
 		}
 
-		public SuperFitter<T> Include<TChild>(IFitter<TChild> fitter, MapperRef<T, TChild> refOf)
+		public SuperFitter<T> Include<TChild>(MapperRef<T, TChild> refOf, IFitter<TChild> fitter)
 		{
 			_entries.Add(new Entry<TChild>(fitter, refOf));
 

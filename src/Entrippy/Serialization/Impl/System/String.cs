@@ -1,5 +1,3 @@
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
 	public class StringSerializer : ISerializer<string>

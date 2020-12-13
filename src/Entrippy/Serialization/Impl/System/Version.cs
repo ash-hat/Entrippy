@@ -1,7 +1,5 @@
 using System;
 using ADepIn;
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
     public class VersionSerializer : ISerializer<Version>

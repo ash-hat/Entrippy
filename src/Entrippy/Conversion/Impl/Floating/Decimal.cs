@@ -1,9 +1,7 @@
-namespace Entrippy.Conversion.Impl
+namespace Entrippy.Conversion
 {
 	public class DecimalConverter : IConverter<float, decimal>, IConverter<double, decimal>, IConverter<decimal, decimal>
 	{
-		public static DecimalConverter Instance { get; } = new DecimalConverter();
-
 		public decimal Convert(float value)
 		{
 			return (decimal) value;

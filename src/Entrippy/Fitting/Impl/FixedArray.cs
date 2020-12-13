@@ -1,6 +1,6 @@
 using System;
 
-namespace Entrippy.Fitting.Impl
+namespace Entrippy.Fitting
 {
 	public class FixedArrayFitter<T> : IFitter<T[]>
 	{

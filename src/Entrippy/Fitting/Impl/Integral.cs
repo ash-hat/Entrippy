@@ -1,4 +1,4 @@
-namespace Entrippy.Fitting.Impl
+namespace Entrippy.Fitting
 {
 	public class IntegralFitters : 
 		IFitter<sbyte>, IInverseFitter<sbyte>,
@@ -10,8 +10,6 @@ namespace Entrippy.Fitting.Impl
 		IFitter<long>, IInverseFitter<long>,
 		IFitter<ulong>, IInverseFitter<ulong>
 	{
-		public static IntegralFitters Instance { get; } = new IntegralFitters();
-
 		public sbyte Fit(sbyte a, sbyte b, double t)
 		{
 			return (sbyte) (a + (b - a) * t);

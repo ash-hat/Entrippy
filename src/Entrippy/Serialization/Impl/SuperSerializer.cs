@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
 	public class SuperSerializer<T> : ISerializer<T> where T : new()
@@ -12,7 +10,7 @@ namespace Entrippy.Serialization
 			_entries = new List<IEntry>();
 		}
 
-		public SuperSerializer<T> Include<TChild>(ISerializer<TChild> serializer, MapperRef<T, TChild> refOf)
+		public SuperSerializer<T> Include<TChild>(MapperRef<T, TChild> refOf, ISerializer<TChild> serializer)
 		{
 			_entries.Add(new Entry<TChild>(serializer, refOf));
 

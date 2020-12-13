@@ -1,4 +1,4 @@
-namespace Entrippy.Conversion.Impl
+namespace Entrippy.Conversion
 {
 	public class LongConverter :
 		IConverter<sbyte, long>, IConverter<byte, long>,

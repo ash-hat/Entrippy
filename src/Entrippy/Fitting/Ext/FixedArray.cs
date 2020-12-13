@@ -1,4 +1,4 @@
-using Entrippy.Fitting.Impl;
+using Entrippy.Fitting;
 
 namespace Entrippy.Fitting
 {

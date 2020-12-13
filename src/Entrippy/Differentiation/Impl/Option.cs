@@ -1,6 +1,6 @@
 using ADepIn;
 
-namespace Entrippy.Differentiation.Impl
+namespace Entrippy.Differentiation
 {
 	public class OptionDifferentiator<TValue, TDelta> : IDifferentiator<Option<TValue>, Option<TDelta>>
 	{

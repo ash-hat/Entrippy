@@ -1,6 +1,4 @@
 using ADepIn;
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
 	public class OptionSerializer<T> : ISerializer<Option<T>>

@@ -1,6 +1,4 @@
 using System.Net;
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
     public class IPEndPointSerializer : ISerializer<IPEndPoint>

@@ -1,6 +1,4 @@
 using System;
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
 	public class FixedArraySerializer<TValue> : ISerializer<TValue[]>

@@ -1,12 +1,10 @@
-namespace Entrippy.Fitting.Impl
+namespace Entrippy.Fitting
 {
 	public class FloatingFitters :
 		IFitter<float>, IInverseFitter<float>,
 		IFitter<double>, IInverseFitter<double>,
 		IFitter<decimal>, IInverseFitter<decimal>
 	{
-		public static FloatingFitters Instance { get; } = new FloatingFitters();
-
 		public float Fit(float a, float b, double t)
 		{
 			return (float) (a + (b - a) * t);

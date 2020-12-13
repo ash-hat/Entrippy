@@ -14,7 +14,7 @@ namespace Entrippy.Differentiation
 			_entries = new List<IEntry>();
 		}
 
-		public SuperDifferentiator<TValue, TDelta> Include<TChildValue, TChildDelta>(IDifferentiator<TChildValue, TChildDelta> differentiator, MapperRef<TValue, TChildValue> valueRefOf, MapperRef<TDelta, Option<TChildDelta>> deltaRefOf)
+		public SuperDifferentiator<TValue, TDelta> Include<TChildValue, TChildDelta>(MapperRef<TValue, TChildValue> valueRefOf, MapperRef<TDelta, Option<TChildDelta>> deltaRefOf, IDifferentiator<TChildValue, TChildDelta> differentiator)
 		{
 			_entries.Add(new Entry<TChildValue, TChildDelta>(differentiator, valueRefOf, deltaRefOf));
 

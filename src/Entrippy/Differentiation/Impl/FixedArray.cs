@@ -1,7 +1,7 @@
 using System;
 using ADepIn;
 
-namespace Entrippy.Differentiation.Impl
+namespace Entrippy.Differentiation
 {
 	public class FixedArrayDifferentiator<TValue, TDelta> : IDifferentiator<TValue[], Option<TDelta>[]>
 	{

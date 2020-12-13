@@ -1,4 +1,4 @@
-namespace Entrippy.Conversion.Impl
+namespace Entrippy.Conversion
 {
 	public class ULongConverter :
 		IConverter<sbyte, ulong>, IConverter<byte, ulong>,

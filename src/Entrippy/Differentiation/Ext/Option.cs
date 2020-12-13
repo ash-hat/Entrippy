@@ -1,5 +1,5 @@
 using ADepIn;
-using Entrippy.Differentiation.Impl;
+using Entrippy.Differentiation;
 
 namespace Entrippy.Differentiation
 {

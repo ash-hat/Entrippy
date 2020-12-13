@@ -1,6 +1,4 @@
 using Entrippy.Conversion;
-using Entrippy.Serialization;
-
 namespace Entrippy.Serialization
 {
 	public class ConverterSerializer<TValue, TConverted> : ISerializer<TValue>

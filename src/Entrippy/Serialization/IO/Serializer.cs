@@ -1,6 +1,6 @@
 using System;
 
-namespace Entrippy.IO
+namespace Entrippy.Serialization
 {
 	public class Serializer : IPackedWriter
 	{

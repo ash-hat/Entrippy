@@ -1,6 +1,6 @@
 using System;
 using ADepIn;
-using Entrippy.IO;
+using Entrippy.Serialization;
 
 namespace Entrippy.Serialization
 {

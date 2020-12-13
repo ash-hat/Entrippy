@@ -1,4 +1,4 @@
-namespace Entrippy.IO
+namespace Entrippy.Serialization
 {
 	public interface IPackedWriter
 	{

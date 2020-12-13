@@ -1,5 +1,5 @@
 using System.Net;
-using Entrippy.IO;
+using Entrippy.Serialization;
 
 namespace Entrippy.Serialization
 {
